@@ -14,5 +14,10 @@ namespace Employee_management.Models.Domain
         public string? State { get; set; }
        
         public long Salary { get; set; }
+
+        public static implicit operator Employee(Employee v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
